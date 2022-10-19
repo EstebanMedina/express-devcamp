@@ -6,7 +6,7 @@ const colors = require ('colors')
 const listEndpoint = require ('express-list-endpoints')
 //los componentes de ruta
 const bootcampRoutes = require('./routes/BootcampRoutes')
-
+const CourseRoutes = require ('./routes/CourseRoutes')
 
 
 //3. Establecer archivo de configuracion
@@ -21,6 +21,7 @@ const app = express()
 
 //rutas de express
 app.use('/api/v1/bootcamps' , bootcampRoutes)
+app.use('/api/v1/courses' , CourseRoutes)
 
 
 //endpoints de aplicacion
