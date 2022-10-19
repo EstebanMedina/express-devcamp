@@ -55,7 +55,7 @@ router.post('/', (req, res)=>{
         .status(200)
         .json({
             "success": true,
-            "data" : "aqui se van a registrar los curso"
+            "data" : "aqui se van a registrar los cursos"
         })
 })
 
